@@ -5,25 +5,21 @@ randomNumber = (number) => {
 
 // listed messages
 const messages = {
-  deneme: ["can i help you?", "you are handsome", "you are amazing!"],
-  yanilma: ["bro", "sir?", "kleopatra"],
-  duzeltme: [
-    "Dont give up",
-    "Please read documentation",
-    "First. Learn English",
-  ],
+  x: ["can i help you?", "you are handsome", "you are amazing!"],
+  y: ["bro", "sir?", "kleopatra"],
+  z: ["Dont give up", "Please read documentation", "First. Learn English"],
 };
 let showedMessage = [];
 for (let i in messages) {
   let option = randomNumber(messages[i].length);
   switch (i) {
-    case "deneme":
+    case "x":
       showedMessage.push(`Hey bro ${messages[i][option]}`);
       break;
-    case "yanilma":
+    case "y":
       showedMessage.push(`Can i help you ${messages[i][option]}`);
       break;
-    case "duzeltme":
+    case "z":
       showedMessage.push(
         `You can be software engineer. ${messages[i][option]}`
       );
